@@ -1,0 +1,17 @@
+.navbar {
+  background-color: #f72210;
+}
+
+.navbar .navbar-brand {
+  fill: white;
+  width: 150px;
+}
+
+.navbar .login img {
+  width: 30px;
+}
+
+.navbar .login {
+  width: 40px;
+}
+/*# sourceMappingURL=styles.css.map */
