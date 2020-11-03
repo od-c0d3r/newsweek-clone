@@ -36,4 +36,18 @@
 .opinin img {
   width: 90px;
 }
+
+.more-stories img {
+  width: 300px;
+}
+
+.more-stories a {
+  color: black;
+  font-size: 18px;
+}
+
+.logo img {
+  background-color: #f72210;
+  width: 30px;
+}
 /*# sourceMappingURL=styles.css.map */
