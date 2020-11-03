@@ -1,5 +1,11 @@
+$primColor : #f72210;
+
+.primColor {
+    color: $primColor;
+}
+
 .navbar {
-    background-color: #f72210;
+    background-color: $primColor;
 
     .navbar-brand {
         fill: white;
@@ -16,7 +22,9 @@
 }
 
 .top-story,
-.featured-stories {
+.featured-stories,
+.editor-pick {
+    
     .tags {
         position: absolute;
         bottom:171px;
@@ -35,7 +43,7 @@
 }
 
 .debate,
-.opinin, {
+.opinin {
 
     img {
         width: 90px;
@@ -55,6 +63,44 @@
 }
 
 .logo img {
-    background-color: #f72210;
-    width: 30px;
+    background-color: $primColor;
+    width: 25px;
+    height: 25px;
+}
+
+.col-12 {
+    a {
+        color: black;
+    }
+    a:hover {
+        color: #000;
+        text-decoration-color: $primColor;
+    }
+}
+
+.topic-img {
+    max-width: 60%;
+}
+
+.footer-logo {
+    width: 200px;
+}
+
+.footer {
+    .social-links li{
+        font-size: 1.5rem;
+        color: #666;
+    }
+
+    li:hover {
+        color: #1DA1F2;
+    }
+
+    .langs li a{
+        color: #666;
+    }
+    .langs li a:hover{
+        color: black;
+        text-decoration: none;
+    }
 }
