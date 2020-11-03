@@ -1,14 +1,43 @@
 .navbar {
     background-color: #f72210;
+
     .navbar-brand {
         fill: white;
         width: 150px;
     }
+
     .login img{
         width: 30px;
     }
 
     .login {
         width: 40px;
+    }
+}
+
+.top-story,
+.featured-stories {
+    .tags {
+        position: absolute;
+        bottom:171px;
+        width: 60px;
+        height: 35px;
+        background-color: #e7e7e7;
+        font-weight: 700;
+        color: red;
+    }
+
+    a {
+        color: black;
+        font: 22px "Roboto Condensed", sans-serif;
+        
+    }
+}
+
+.debate,
+.opinin {
+
+    img {
+        width: 90px;
     }
 }
