@@ -1,10 +1,10 @@
 [](https://img.shields.io/badge/Microverse-blueviolet)
 
-## Week 2
+## Week 3
 
-# Project 2 :  Building with Responsive Design
+# Project 3 :  Building with Bootstrap Framework
 
-> This Project consists of making a clone of a TheNextWeb page.
+> This Project consists of making a clone of a newsweek page using Bootstrap framework and CSS preprocessors.
 
 ![screenshot](./imgs/screenshot.png)
 
@@ -25,10 +25,12 @@ You can find the original project specification at: https://www.theodinproject.c
 👤 **Nihal Mohammad**
 
 - GitHub: [@apricot12](https://github.com/apricot12)
+- LinkedIn: [@aprikot-web](https://www.linkedin.com/in/aprikot-web/)
 
 👤 **Omar Rashad**
 
 - GitHub: [@od-c0d3r](https://github.com/od-c0d3r)
+-LinkedIn: [@omarrashad](https://www.linkedin.com/in/omarrashad)
 
 ## 🤝 Contributing
 
