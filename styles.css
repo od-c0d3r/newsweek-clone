@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.txtprimColor {
+  color: #f72210;
+}
+
+.navbar {
+  background-color: #f72210;
+}
+
+.navbar .navbar-brand {
+  fill: white;
+  width: 150px;
+}
+
+.debate img,
+.opinin img {
+  width: 90px;
+}
+
+.more-stories img {
+  width: 300px;
+}
+
+.logo img {
+  background-color: #f72210;
+  width: 25px;
+  height: 25px;
+}
+
+.navbar .login img {
+  width: 30px;
+}
+
+.navbar .login {
+  width: 40px;
+}
+
+.lg-nav .top {
+  background-color: #f72210;
+}
+
+.top-story .corner-txt,
+.featured-stories .corner-txt,
+.editor-pick .corner-txt {
+  position: relative;
+  top: -25px;
+}
+
+.top-story a,
+.featured-stories a,
+.editor-pick a {
+  color: black;
+  font: 22px "Roboto Condensed", sans-serif;
+}
+
+.top-story .corner-txt {
+  position: relative;
+  top: -25px;
+}
+
+.debate a,
+.opinin a {
+  color: #000;
+  font-weight: bold;
+}
+
+.debate span,
+.opinin span {
+  color: #666;
+}
+
+.debate .circle,
+.opinin .circle {
+  background-color: black;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: -41px;
+  left: 50%;
+}
+
+.more-stories a {
+  color: black;
+  font-size: 18px;
+}
+
+.col-12 a {
+  color: black;
+}
+
+.col-12 a:hover {
+  color: #000;
+  -webkit-text-decoration-color: #f72210;
+  text-decoration-color: #f72210;
+}
+
+.topic-img {
+  max-width: 60%;
+}
+
+.footer-logo {
+  width: 200px;
+}
+
+.footer .social-links li {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.footer li:hover {
+  color: #1da1f2;
+}
+
+.footer .langs li a {
+  color: #666;
+}
+
+.footer .langs li a:hover {
+  color: black;
+  text-decoration: none;
+}

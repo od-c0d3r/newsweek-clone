@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Project 3 | Newsweek Clone</title>
+</head>
+
+<body>
+    <!-- TOPBAR sm & md -->
+    <nav class="navbar navbar-dark d-lg-none">
+
+        <div class="navbar logo">
+            <a class="navbar-brand" href="#">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
+                    style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
+                    <g>
+                        <path class="st0"
+                            d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+        </div>
+
+        <div class="navbuttons row">
+            <div class="login">
+                <img src="imgs/login.svg" alt="login">
+            </div>
+            <div class="subsrbe-button">
+                <button type="button" class="btn btn-warning">Subscribe</button>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- TOPBAR LG -->
+    <nav class="d-none d-sm-none d-md-none d-lg-block">
+
+        <!-- BACKGROUND FIX -->
+        <div class="navbar d-flex justify-content-between px-4 py-4">
+
+            <div class="font-weight-bold text-white">
+                <div><i class="fas fa-cloud-sun"></i>23° Arizona, SW</div>
+                <div>Thu, Nov 05, 2020</div>
+            </div>
+
+            <div>
+                <svg version="1.1" id="Layer" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
+                    style="enable-background:new 0 0 395.6 60; width: 250px; fill: white;" xml:space="preserve">
+                    <g>
+                        <path class="st0"
+                            d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="d-flex align-items-center">
+                <a class="text-white font-weight-bold" href="#">LOGIN</a>
+                <div class="subsrbe-button px-5">
+                    <button type="button" class="btn btn-warning">Subscribe</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div>
+            <ul class="list-unstyled list-inline py-2">
+                <li class="list-inline-item"><a class="text-dark font-weight-bold border-right px-3" href="#">U.S.</a>
+                </li>
+                <li class="list-inline-item"><a class="text-dark font-weight-bold border-right px-3" href="#">World</a>
+                </li>
+                <li class="list-inline-item"><a class="text-dark font-weight-bold border-right px-3"
+                        href="#">Business</a></li>
+                <li class="list-inline-item"><a class="text-dark font-weight-bold border-right px-3" href="#">Tech &
+                        Science</a></li>
+                <li class="list-inline-item"><a class="text-dark font-weight-bold border-right px-3"
+                        href="#">Culture</a></li>
+                <li class="list-inline-item"><a class="text-dark font-weight-bold border-right px-3"
+                        href="#">Newsgeek</a></li>
+                <li class="list-inline-item"><a class="text-dark font-weight-bold border-right px-3" href="#">Sports</a>
+                </li>
+                <li class="list-inline-item"><a class="text-dark font-weight-bold border-right px-3" href="#">Health</a>
+                </li>
+                <li class="list-inline-item"><a class="text-dark font-weight-bold border-right px-3" href="#">The
+                        Debate</a></li>
+                <li class="list-inline-item"><a class="text-dark font-weight-bold border-right px-3"
+                        href="#">Vantage</a></li>
+                <li class="list-inline-item"><a class="text-dark font-weight-bold border-right px-3"
+                        href="#">Weather</a></li>
+                <li class="list-inline-item">Search</li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="list-unstyled list-inline py-2">
+                <li class="list-inline-item"><a class="text-dark font-weight-bold px-3" href="#">TRENDING</a></li>
+                <li class="list-inline-item"><a class="text-black-50 font-weight-bold px-3" href="#">DONALD TRUMP</a>
+                </li>
+                <li class="list-inline-item"><a class="text-black-50 font-weight-bold px-3" href="#">JOE BIDEN</a></li>
+                <li class="list-inline-item"><a class="text-black-50 font-weight-bold px-3" href="#">2020 ELECTION</a>
+                </li>
+                <li class="list-inline-item"><a class="text-black-50 font-weight-bold px-3" href="#">STIMULUS
+                        PACKAGE</a></li>
+                <li class="list-inline-item"><a class="text-black-50 font-weight-bold px-3" href="#">CORONAVIRUS</a>
+                </li>
+                <li class="list-inline-item"><a class="text-black-50 font-weight-bold px-3" href="#">COUNTIES THAT
+                        COUNT</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- MAIN CONTAINER-->
+    <main class="container-fluid main-content">
+
+        <!-- sm screen top-story -->
+        <div class="top-story d-sm-block d-md-none">
+            <h5 class="text-black-50 font-weight-bold">TOP STORY</h5>
+            <figure class="main-img position-relative">
+                <img class="story-img col-12 px-0" src="imgs/top-story.png" alt="top-story">
+                <span class="corner-txt py-1 px-3 bg-white font-weight-bolder text-danger">U.S
+                </span>
+                <figcaption class="py-2">
+                    <a href="#"><strong>More Voters Expect Protests if Donald Trump Wins the Election:
+                            Poll</strong></a>
+                    <p>President Donald Trump said in September that if civil unrest erupted on election night,
+                        his administration would "put it down within minutes."</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- PAGE STRUCTURE -->
+        <div class="row">
+
+            <!-- Frist Column -->
+            <div class="featured-stories col-12 col-md-6 col-lg-3 order-1 order-md-1">
+                <div class="row py-3">
+                    <div class="col-12">
+                        <h5 class="text-black-50 font-weight-bold">FEARTURED STORIES</h5>
+                        <figure class="main-img position-relative">
+                            <img class="story-img col-12 px-0" src="imgs/top-story.png" alt="top-story">
+                            <span class="corner-txt py-1 px-3 bg-white font-weight-bolder text-danger">U.S
+                            </span>
+                            <figcaption class="py-2">
+                                <a href="#"><strong>More Voters Expect Protests if Donald Trump Wins the Election:
+                                        Poll</strong></a>
+                                <p>President Donald Trump said in September that if civil unrest erupted on election
+                                    night,
+                                    his administration would "put it down within minutes."</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12">
+                        <figure class="main-img position-relative">
+                            <img class="story-img col-12 px-0" src="imgs/top-story.png" alt="top-story">
+                            <span class="corner-txt py-1 px-3 bg-white font-weight-bolder text-danger">U.S
+                            </span>
+                            <figcaption class="py-2">
+                                <a href="#"><strong>More Voters Expect Protests if Donald Trump Wins the Election:
+                                        Poll</strong></a>
+                                <p>President Donald Trump said in September that if civil unrest erupted on election
+                                    night,
+                                    his administration would "put it down within minutes."</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12">
+                        <figure class="main-img position-relative">
+                            <img class="story-img col-12 px-0" src="imgs/top-story.png" alt="top-story">
+                            <span class="corner-txt py-1 px-3 bg-white font-weight-bolder text-danger">U.S
+                            </span>
+                            <figcaption class="py-2">
+                                <a href="#"><strong>More Voters Expect Protests if Donald Trump Wins the Election:
+                                        Poll</strong></a>
+                                <p>President Donald Trump said in September that if civil unrest erupted on election
+                                    night,
+                                    his administration would "put it down within minutes."</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12">
+                        <figure class="main-img position-relative">
+                            <img class="story-img col-12 px-0" src="imgs/top-story.png" alt="top-story">
+                            <span class="corner-txt py-1 px-3 bg-white font-weight-bolder text-danger">U.S
+                            </span>
+                            <figcaption class="py-2">
+                                <a href="#"><strong>More Voters Expect Protests if Donald Trump Wins the Election:
+                                        Poll</strong></a>
+                                <p>President Donald Trump said in September that if civil unrest erupted on election
+                                    night,
+                                    his administration would "put it down within minutes."</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="card mb-4 mx-3">
+                        <img class="card-img-top" src="imgs/d-t.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Why are these careers so highly sought after?</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 mx-3">
+                        <img class="card-img-top" src="imgs/d-t.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Why are these careers so highly sought after?</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 mx-3">
+                        <img class="card-img-top" src="imgs/d-t.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Why are these careers so highly sought after?</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Secound Column -->
+            <div class="middle-stories col-12 col-lg-6 col-md-6 order-3 order-md-2 py-3">
+                <!-- md and lg screen top-story -->
+                <div class="top-story d-none d-md-block">
+                    <h5 class="text-black-50 font-weight-bold">TOP STORY</h5>
+                    <figure class="main-img position-relative">
+                        <img class="col-12 px-0" src="imgs/top-story.png" alt="top-story">
+                        <span class="corner-txt bg-white font-weight-bolder text-danger py-1 px-3">U.S
+                        </span>
+                        <figcaption class="py-2">
+                            <a href="#"><strong>More Voters Expect Protests if Donald Trump Wins the Election:
+                                    Poll</strong></a>
+                            <p>President Donald Trump said in September that if civil unrest erupted on election night,
+                                his administration would "put it down within minutes."</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="wrapper">
+                    <div class="my-turn">
+                        <h5 class="text-black-50 font-weight-bold">MY TURN</h5>
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <figure>
+                                    <img class="col-12 px-0" src="imgs/myturn.jpg" alt="img">
+                                    <figcaption class="text-black-50 font-weight-bold">'I drove 10 hours after not
+                                        receiving my
+                                        absentee
+                                        ballot'
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-12 col-md-4">
+                                <figure>
+                                    <img class="col-12 px-0" src="imgs/myturn.jpg" alt="img">
+                                    <figcaption class="text-black-50 font-weight-bold">'I drove 10 hours after not
+                                        receiving my
+                                        absentee
+                                        ballot'
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-12 col-md-4">
+                                <figure>
+                                    <img class="col-12 px-0" src="imgs/myturn.jpg" alt="img">
+                                    <figcaption class="text-black-50 font-weight-bold">'I drove 10 hours after not
+                                        receiving my
+                                        absentee
+                                        ballot'
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cultural">
+                        <h5 class="text-black-50 font-weight-bold">CULTURE & TRAVEL</h5>
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <figure>
+                                    <img class="col-12 px-0" src="imgs/myturn.jpg" alt="img">
+                                    <figcaption class="text-black-50 font-weight-bold">'I drove 10 hours after not
+                                        receiving my
+                                        absentee
+                                        ballot'
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-12 col-md-4">
+                                <figure>
+                                    <img class="col-12 px-0" src="imgs/myturn.jpg" alt="img">
+                                    <figcaption class="text-black-50 font-weight-bold">'I drove 10 hours after not
+                                        receiving my
+                                        absentee
+                                        ballot'
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-12 col-md-4">
+                                <figure>
+                                    <img class="col-12 px-0" src="imgs/myturn.jpg" alt="img">
+                                    <figcaption class="text-black-50 font-weight-bold">'I drove 10 hours after not
+                                        receiving my
+                                        absentee
+                                        ballot'
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="more-stories py-4 w-100 md-flex flex-column align-items-center">
+                    <h5 class="text-black-50 font-weight-bold">MORE STORIES</h5>
+                    <div class="d-flex align-items-center py-2 border-top">
+                        <img class="px-3" src="imgs/more-stories.png" alt="img">
+                        <div>
+                            <a class="font-weight-bold" href="#">GOP Radio Host Suggests We 'Need' Kyle Rittenhouse Free
+                                for Election Day</a>
+                            <div class="text-muted">
+                                Jesse Kelly tweeted the remarks amid fears of violence from far-right and militia groups
+                                and
+                                widespread protests on Tuesday.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center py-2 border-top">
+                        <img class="px-3" src="imgs/more-stories.png" alt="img">
+                        <div>
+                            <a class="font-weight-bold" href="#">GOP Radio Host Suggests We 'Need' Kyle Rittenhouse Free
+                                for Election Day</a>
+                            <div class="text-muted">
+                                Jesse Kelly tweeted the remarks amid fears of violence from far-right and militia groups
+                                and
+                                widespread protests on Tuesday.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center py-2 border-top">
+                        <img class="px-3" src="imgs/more-stories.png" alt="img">
+                        <div>
+                            <a class="font-weight-bold" href="#">GOP Radio Host Suggests We 'Need' Kyle Rittenhouse Free
+                                for Election Day</a>
+                            <div class="text-muted">
+                                Jesse Kelly tweeted the remarks amid fears of violence from far-right and militia groups
+                                and
+                                widespread protests on Tuesday.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center py-2 border-top">
+                        <img class="px-3" src="imgs/more-stories.png" alt="img">
+                        <div>
+                            <a class="font-weight-bold" href="#">GOP Radio Host Suggests We 'Need' Kyle Rittenhouse Free
+                                for Election Day</a>
+                            <div class="text-muted">
+                                Jesse Kelly tweeted the remarks amid fears of violence from far-right and militia groups
+                                and
+                                widespread protests on Tuesday.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center py-2 border-top">
+                        <img class="px-3" src="imgs/more-stories.png" alt="img">
+                        <div>
+                            <a class="font-weight-bold" href="#">GOP Radio Host Suggests We 'Need' Kyle Rittenhouse Free
+                                for Election Day</a>
+                            <div class="text-muted">
+                                Jesse Kelly tweeted the remarks amid fears of violence from far-right and militia groups
+                                and
+                                widespread protests on Tuesday.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center py-2 border-top">
+                        <img class="px-3" src="imgs/more-stories.png" alt="img">
+                        <div>
+                            <a class="font-weight-bold" href="#">GOP Radio Host Suggests We 'Need' Kyle Rittenhouse Free
+                                for Election Day</a>
+                            <div class="text-muted">
+                                Jesse Kelly tweeted the remarks amid fears of violence from far-right and militia groups
+                                and
+                                widespread protests on Tuesday.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center py-2 border-top">
+                        <img class="px-3" src="imgs/more-stories.png" alt="img">
+                        <div>
+                            <a class="font-weight-bold" href="#">GOP Radio Host Suggests We 'Need' Kyle Rittenhouse Free
+                                for Election Day</a>
+                            <div class="text-muted">
+                                Jesse Kelly tweeted the remarks amid fears of violence from far-right and militia groups
+                                and
+                                widespread protests on Tuesday.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center py-2 border-top">
+                        <img class="px-3" src="imgs/more-stories.png" alt="img">
+                        <div>
+                            <a class="font-weight-bold" href="#">GOP Radio Host Suggests We 'Need' Kyle Rittenhouse Free
+                                for Election Day</a>
+                            <div class="text-muted">
+                                Jesse Kelly tweeted the remarks amid fears of violence from far-right and militia groups
+                                and
+                                widespread protests on Tuesday.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center py-2 border-top">
+                        <img class="px-3" src="imgs/more-stories.png" alt="img">
+                        <div>
+                            <a class="font-weight-bold" href="#">GOP Radio Host Suggests We 'Need' Kyle Rittenhouse Free
+                                for Election Day</a>
+                            <div class="text-muted">
+                                Jesse Kelly tweeted the remarks amid fears of violence from far-right and militia groups
+                                and
+                                widespread protests on Tuesday.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center py-2 border-top">
+                        <img class="px-3" src="imgs/more-stories.png" alt="img">
+                        <div>
+                            <a class="font-weight-bold" href="#">GOP Radio Host Suggests We 'Need' Kyle Rittenhouse Free
+                                for Election Day</a>
+                            <div class="text-muted">
+                                Jesse Kelly tweeted the remarks amid fears of violence from far-right and militia groups
+                                and
+                                widespread protests on Tuesday.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center py-2 border-top">
+                        <img class="px-3" src="imgs/more-stories.png" alt="img">
+                        <div>
+                            <a class="font-weight-bold" href="#">GOP Radio Host Suggests We 'Need' Kyle Rittenhouse Free
+                                for Election Day</a>
+                            <div class="text-muted">
+                                Jesse Kelly tweeted the remarks amid fears of violence from far-right and militia groups
+                                and
+                                widespread protests on Tuesday.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center py-2 border-top">
+                        <img class="px-3" src="imgs/more-stories.png" alt="img">
+                        <div>
+                            <a class="font-weight-bold" href="#">GOP Radio Host Suggests We 'Need' Kyle Rittenhouse Free
+                                for Election Day</a>
+                            <div class="text-muted">
+                                Jesse Kelly tweeted the remarks amid fears of violence from far-right and militia groups
+                                and
+                                widespread protests on Tuesday.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center py-2 border-top">
+                        <img class="px-3" src="imgs/more-stories.png" alt="img">
+                        <div>
+                            <a class="font-weight-bold" href="#">GOP Radio Host Suggests We 'Need' Kyle Rittenhouse Free
+                                for Election Day</a>
+                            <div class="text-muted">
+                                Jesse Kelly tweeted the remarks amid fears of violence from far-right and militia groups
+                                and
+                                widespread protests on Tuesday.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Column -->
+            <div class="last-stories col-lg-3 order-2 order-md-3 py-3">
+
+                <div class="debate">
+
+                    <h5 class="text-black-50 font-weight-bold">THE DEBATE</h5>
+
+                    <div class="d-flex align-items-center py-5 border-top">
+                        <img class="px-3" src="imgs/user1.png" alt="img">
+                        <div>
+                            <a href="#">Reform Section 230 Now</a>
+                            <div class="byline">
+                                <span>BY WILL CHAMBERLAIN</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="circle d-flex justify-content-center align-items-center">VS</div>
+
+                    <div class="d-flex align-items-center flex-row-reverse py-4 border-bottom">
+                        <img class="px-3" src="imgs/user1.png" alt="img">
+                        <div>
+                            <a href="#">Reform Section 230 Now</a>
+                            <div class="byline">
+                                <span>BY WILL CHAMBERLAIN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="opinin py-4">
+                    <h5 class="text-black-50 px-3 font-weight-bold">OPINION</h5>
+                    <div class="d-flex align-items-center py-4">
+                        <img class="px-3" src="imgs/user1.png" alt="img">
+                        <div>
+                            <a href="#">Reform Section 230 Now</a>
+                            <div class="byline">
+                                <span>BY WILL CHAMBERLAIN</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center py-4 border-top">
+                        <img class="px-3" src="imgs/user1.png" alt="img">
+                        <div>
+                            <a href="#">Reform Section 230 Now</a>
+                            <div class="byline">
+                                <span>BY WILL CHAMBERLAIN</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center py-4 border-top">
+                        <img class="px-3" src="imgs/user1.png" alt="img">
+                        <div>
+                            <a href="#">Reform Section 230 Now</a>
+                            <div class="byline">
+                                <span>BY WILL CHAMBERLAIN</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center py-4 border-top">
+                        <img class="px-3" src="imgs/user1.png" alt="img">
+                        <div>
+                            <a href="#">Reform Section 230 Now</a>
+                            <div class="byline">
+                                <span>BY WILL CHAMBERLAIN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <img class="card-img-top" src="imgs/d-t.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Why are these careers so highly sought after?</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <img class="card-img-top" src="imgs/inmag.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Why are these careers so highly sought after?</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <img class="card-img-top" src="imgs/more-stories.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Why are these careers so highly sought after?</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <img class="card-img-top" src="imgs/myturn.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Why are these careers so highly sought after?</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="inmag py-4">
+
+            <div class="logo d-flex justify-content-center align-items-center">
+                <img src="imgs/logo-n1.svg" alt="n1">
+                <h5 class="px-2 py-2">IN THE MAGAZINE</h5>
+            </div>
+
+            <div class="row py-4 border-top">
+
+                <div class="col-12 col-md-3">
+                    <div class="col-12">
+                        <img src="imgs/inmag.jpg" alt="inmag" class="col-12">
+                        <a class="font-weight-bold font-size h4" href="#">SEE ALL FEARTURES ></a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/seefeat.jpg" alt="top-story">
+                    </figure>
+                    <a class="font-weight-bold text-white bg-danger px-1 py-1" href="#">COVER</a> <a
+                        class="font-weight-bold text-danger" href="#">BUSINESS</a> <br>
+                    <a class="font-weight-bold" href="#">Exclusive: 600 U.S. Groups Linked to China Communist Party
+                        Influence Effort</a>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/seefeat.jpg" alt="top-story">
+                    </figure>
+                    <a class="font-weight-bold text-white bg-danger px-1 py-1" href="#">COVER</a> <a
+                        class="font-weight-bold text-danger" href="#">BUSINESS</a> <br>
+                    <a class="font-weight-bold" href="#">Exclusive: 600 U.S. Groups Linked to China Communist Party
+                        Influence Effort</a>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/seefeat.jpg" alt="top-story">
+                    </figure>
+                    <a class="font-weight-bold text-white bg-danger px-1 py-1" href="#">COVER</a> <a
+                        class="font-weight-bold text-danger" href="#">BUSINESS</a> <br>
+                    <a class="font-weight-bold" href="#">Exclusive: 600 U.S. Groups Linked to China Communist Party
+                        Influence Effort</a>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/seefeat.jpg" alt="top-story">
+                    </figure>
+                    <a class="font-weight-bold text-white bg-danger px-1 py-1" href="#">COVER</a> <a
+                        class="font-weight-bold text-danger" href="#">BUSINESS</a> <br>
+                    <a class="font-weight-bold" href="#">Exclusive: 600 U.S. Groups Linked to China Communist Party
+                        Influence Effort</a>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/seefeat.jpg" alt="top-story">
+                    </figure>
+                    <a class="font-weight-bold text-white bg-danger px-1 py-1" href="#">COVER</a> <a
+                        class="font-weight-bold text-danger" href="#">BUSINESS</a> <br>
+                    <a class="font-weight-bold" href="#">Exclusive: 600 U.S. Groups Linked to China Communist Party
+                        Influence Effort</a>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/seefeat.jpg" alt="top-story">
+                    </figure>
+                    <a class="font-weight-bold text-white bg-danger px-1 py-1" href="#">COVER</a> <a
+                        class="font-weight-bold text-danger" href="#">BUSINESS</a> <br>
+                    <a class="font-weight-bold" href="#">Exclusive: 600 U.S. Groups Linked to China Communist Party
+                        Influence Effort</a>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/seefeat.jpg" alt="top-story">
+                    </figure>
+                    <a class="font-weight-bold text-white bg-danger px-1 py-1" href="#">COVER</a> <a
+                        class="font-weight-bold text-danger" href="#">BUSINESS</a> <br>
+                    <a class="font-weight-bold" href="#">Exclusive: 600 U.S. Groups Linked to China Communist Party
+                        Influence Effort</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="editor-pick py-3">
+
+            <div class="logo d-flex justify-content-center ">
+                <img src="imgs/logo-n1.svg" alt="n1">
+                <h5 class="px-2">EDITOR'S PICK</h5>
+            </div>
+
+            <div class="row border-top py-3">
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/d-t.jpg" alt="top-story">
+                        <span class="corner-txt bg-white font-weight-bolder text-danger py-1 px-3">U.S
+                        </span>
+                        <figcaption class="py-2">
+                            <a href="#"><strong>More Voters Expect Protests if Donald Trump Wins the Election:
+                                    Poll</strong></a>
+                            <p>President Donald Trump said in September that if civil unrest erupted on election
+                                night,
+                                his administration would "put it down within minutes."</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/d-t.jpg" alt="top-story">
+                        <span class="corner-txt bg-white font-weight-bolder text-danger py-1 px-3">U.S
+                        </span>
+                        <figcaption class="py-2">
+                            <a href="#"><strong>More Voters Expect Protests if Donald Trump Wins the Election:
+                                    Poll</strong></a>
+                            <p>President Donald Trump said in September that if civil unrest erupted on election
+                                night,
+                                his administration would "put it down within minutes."</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/d-t.jpg" alt="top-story">
+                        <span class="corner-txt bg-white font-weight-bolder text-danger py-1 px-3">U.S
+                        </span>
+                        <figcaption class="py-2">
+                            <a href="#"><strong>More Voters Expect Protests if Donald Trump Wins the Election:
+                                    Poll</strong></a>
+                            <p>President Donald Trump said in September that if civil unrest erupted on election
+                                night,
+                                his administration would "put it down within minutes."</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/d-t.jpg" alt="top-story">
+                        <span class="corner-txt bg-white font-weight-bolder text-danger py-1 px-3">U.S
+                        </span>
+                        <figcaption class="py-2">
+                            <a href="#"><strong>More Voters Expect Protests if Donald Trump Wins the Election:
+                                    Poll</strong></a>
+                            <p>President Donald Trump said in September that if civil unrest erupted on election
+                                night,
+                                his administration would "put it down within minutes."</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/d-t.jpg" alt="top-story">
+                        <span class="corner-txt bg-white font-weight-bolder text-danger py-1 px-3">U.S
+                        </span>
+                        <figcaption class="py-2">
+                            <a href="#"><strong>More Voters Expect Protests if Donald Trump Wins the Election:
+                                    Poll</strong></a>
+                            <p>President Donald Trump said in September that if civil unrest erupted on election
+                                night,
+                                his administration would "put it down within minutes."</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/d-t.jpg" alt="top-story">
+                        <span class="corner-txt bg-white font-weight-bolder text-danger py-1 px-3">U.S
+                        </span>
+                        <figcaption class="py-2">
+                            <a href="#"><strong>More Voters Expect Protests if Donald Trump Wins the Election:
+                                    Poll</strong></a>
+                            <p>President Donald Trump said in September that if civil unrest erupted on election
+                                night,
+                                his administration would "put it down within minutes."</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/d-t.jpg" alt="top-story">
+                        <span class="corner-txt bg-white font-weight-bolder text-danger py-1 px-3">U.S
+                        </span>
+                        <figcaption class="py-2">
+                            <a href="#"><strong>More Voters Expect Protests if Donald Trump Wins the Election:
+                                    Poll</strong></a>
+                            <p>President Donald Trump said in September that if civil unrest erupted on election
+                                night,
+                                his administration would "put it down within minutes."</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/d-t.jpg" alt="top-story">
+                        <span class="corner-txt bg-white font-weight-bolder text-danger py-1 px-3">U.S
+                        </span>
+                        <figcaption class="py-2">
+                            <a href="#"><strong>More Voters Expect Protests if Donald Trump Wins the Election:
+                                    Poll</strong></a>
+                            <p>President Donald Trump said in September that if civil unrest erupted on election
+                                night,
+                                his administration would "put it down within minutes."</p>
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="topic">
+
+            <div class="row border-top">
+
+                <h5 class="col-12  txtprimColor font-weight-bold">U.S.</h5>
+
+                <div class="col-12 col-md-4">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/topic.png" alt="donald">
+                        <figcaption class="py-2 font-weight-bold">
+                            <a href="#">Mehdi Hasan Summarizes 'Awfulness' of Trump Presidency in Two-minute
+                                Video</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/topic.png" alt="donald">
+                        <figcaption class="py-2 font-weight-bold">
+                            <a href="#">Mehdi Hasan Summarizes 'Awfulness' of Trump Presidency in Two-minute
+                                Video</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col col-md-4">
+
+                    <div class="col-12 border-bottom mb-3">
+                        <figure class="d-flex">
+                            <img class="topic-img px-3 h-100 w-100" src="imgs/topic.png" alt="donald">
+                            <figcaption>
+                                <a class="col-6 py-2 font-weight-bold px-0" href="#">Mehdi Hasan Summarizes 'Awfulness'
+                                    of
+                                    Trump Presidency in Two-minute Video</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 border-bottom mb-3">
+                        <figure class="d-flex">
+                            <img class="topic-img px-3 h-100 w-100" src="imgs/topic.png" alt="donald">
+                            <figcaption>
+                                <a class="col-6 py-2 font-weight-bold px-0" href="#">Mehdi Hasan Summarizes 'Awfulness'
+                                    of
+                                    Trump Presidency in Two-minute Video</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 border-bottom">
+                        <figure class="d-flex">
+                            <img class="topic-img px-3 h-100 w-100" src="imgs/topic.png" alt="donald">
+                            <figcaption>
+                                <a class="col-6 py-2 font-weight-bold px-0" href="#">Mehdi Hasan Summarizes 'Awfulness'
+                                    of
+                                    Trump Presidency in Two-minute Video</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row border-top">
+
+                <h5 class="col-12  txtprimColor font-weight-bold">U.S.</h5>
+
+                <div class="col-12 col-md-4">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/topic.png" alt="donald">
+                        <figcaption class="py-2 font-weight-bold">
+                            <a href="#">Mehdi Hasan Summarizes 'Awfulness' of Trump Presidency in Two-minute
+                                Video</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/topic.png" alt="donald">
+                        <figcaption class="py-2 font-weight-bold">
+                            <a href="#">Mehdi Hasan Summarizes 'Awfulness' of Trump Presidency in Two-minute
+                                Video</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col col-md-4">
+
+                    <div class="col-12 border-bottom mb-3">
+                        <figure class="d-flex">
+                            <img class="topic-img px-3 h-100 w-100" src="imgs/topic.png" alt="donald">
+                            <figcaption>
+                                <a class="col-6 py-2 font-weight-bold px-0" href="#">Mehdi Hasan Summarizes 'Awfulness'
+                                    of
+                                    Trump Presidency in Two-minute Video</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 border-bottom mb-3">
+                        <figure class="d-flex">
+                            <img class="topic-img px-3 h-100 w-100" src="imgs/topic.png" alt="donald">
+                            <figcaption>
+                                <a class="col-6 py-2 font-weight-bold px-0" href="#">Mehdi Hasan Summarizes 'Awfulness'
+                                    of
+                                    Trump Presidency in Two-minute Video</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 border-bottom">
+                        <figure class="d-flex">
+                            <img class="topic-img px-3 h-100 w-100" src="imgs/topic.png" alt="donald">
+                            <figcaption>
+                                <a class="col-6 py-2 font-weight-bold px-0" href="#">Mehdi Hasan Summarizes 'Awfulness'
+                                    of
+                                    Trump Presidency in Two-minute Video</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row border-top">
+
+                <h5 class="col-12  txtprimColor font-weight-bold">U.S.</h5>
+
+                <div class="col-12 col-md-4">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/topic.png" alt="donald">
+                        <figcaption class="py-2 font-weight-bold">
+                            <a href="#">Mehdi Hasan Summarizes 'Awfulness' of Trump Presidency in Two-minute
+                                Video</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/topic.png" alt="donald">
+                        <figcaption class="py-2 font-weight-bold">
+                            <a href="#">Mehdi Hasan Summarizes 'Awfulness' of Trump Presidency in Two-minute
+                                Video</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col col-md-4">
+
+                    <div class="col-12 border-bottom mb-3">
+                        <figure class="d-flex">
+                            <img class="topic-img px-3 h-100 w-100" src="imgs/topic.png" alt="donald">
+                            <figcaption>
+                                <a class="col-6 py-2 font-weight-bold px-0" href="#">Mehdi Hasan Summarizes 'Awfulness'
+                                    of
+                                    Trump Presidency in Two-minute Video</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 border-bottom mb-3">
+                        <figure class="d-flex">
+                            <img class="topic-img px-3 h-100 w-100" src="imgs/topic.png" alt="donald">
+                            <figcaption>
+                                <a class="col-6 py-2 font-weight-bold px-0" href="#">Mehdi Hasan Summarizes 'Awfulness'
+                                    of
+                                    Trump Presidency in Two-minute Video</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 border-bottom">
+                        <figure class="d-flex">
+                            <img class="topic-img px-3 h-100 w-100" src="imgs/topic.png" alt="donald">
+                            <figcaption>
+                                <a class="col-6 py-2 font-weight-bold px-0" href="#">Mehdi Hasan Summarizes 'Awfulness'
+                                    of
+                                    Trump Presidency in Two-minute Video</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row border-top">
+
+                <h5 class="col-12  txtprimColor font-weight-bold">U.S.</h5>
+
+                <div class="col-12 col-md-4">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/topic.png" alt="donald">
+                        <figcaption class="py-2 font-weight-bold">
+                            <a href="#">Mehdi Hasan Summarizes 'Awfulness' of Trump Presidency in Two-minute
+                                Video</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/topic.png" alt="donald">
+                        <figcaption class="py-2 font-weight-bold">
+                            <a href="#">Mehdi Hasan Summarizes 'Awfulness' of Trump Presidency in Two-minute
+                                Video</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col col-md-4">
+
+                    <div class="col-12 border-bottom mb-3">
+                        <figure class="d-flex">
+                            <img class="topic-img px-3 h-100 w-100" src="imgs/topic.png" alt="donald">
+                            <figcaption>
+                                <a class="col-6 py-2 font-weight-bold px-0" href="#">Mehdi Hasan Summarizes 'Awfulness'
+                                    of
+                                    Trump Presidency in Two-minute Video</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 border-bottom mb-3">
+                        <figure class="d-flex">
+                            <img class="topic-img px-3 h-100 w-100" src="imgs/topic.png" alt="donald">
+                            <figcaption>
+                                <a class="col-6 py-2 font-weight-bold px-0" href="#">Mehdi Hasan Summarizes 'Awfulness'
+                                    of
+                                    Trump Presidency in Two-minute Video</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 border-bottom">
+                        <figure class="d-flex">
+                            <img class="topic-img px-3 h-100 w-100" src="imgs/topic.png" alt="donald">
+                            <figcaption>
+                                <a class="col-6 py-2 font-weight-bold px-0" href="#">Mehdi Hasan Summarizes 'Awfulness'
+                                    of
+                                    Trump Presidency in Two-minute Video</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row border-top">
+
+                <h5 class="col-12  txtprimColor font-weight-bold">U.S.</h5>
+
+                <div class="col-12 col-md-4">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/topic.png" alt="donald">
+                        <figcaption class="py-2 font-weight-bold">
+                            <a href="#">Mehdi Hasan Summarizes 'Awfulness' of Trump Presidency in Two-minute
+                                Video</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/topic.png" alt="donald">
+                        <figcaption class="py-2 font-weight-bold">
+                            <a href="#">Mehdi Hasan Summarizes 'Awfulness' of Trump Presidency in Two-minute
+                                Video</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col col-md-4">
+
+                    <div class="col-12 border-bottom mb-3">
+                        <figure class="d-flex">
+                            <img class="topic-img px-3 h-100 w-100" src="imgs/topic.png" alt="donald">
+                            <figcaption>
+                                <a class="col-6 py-2 font-weight-bold px-0" href="#">Mehdi Hasan Summarizes 'Awfulness'
+                                    of
+                                    Trump Presidency in Two-minute Video</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 border-bottom mb-3">
+                        <figure class="d-flex">
+                            <img class="topic-img px-3 h-100 w-100" src="imgs/topic.png" alt="donald">
+                            <figcaption>
+                                <a class="col-6 py-2 font-weight-bold px-0" href="#">Mehdi Hasan Summarizes 'Awfulness'
+                                    of
+                                    Trump Presidency in Two-minute Video</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 border-bottom">
+                        <figure class="d-flex">
+                            <img class="topic-img px-3 h-100 w-100" src="imgs/topic.png" alt="donald">
+                            <figcaption>
+                                <a class="col-6 py-2 font-weight-bold px-0" href="#">Mehdi Hasan Summarizes 'Awfulness'
+                                    of
+                                    Trump Presidency in Two-minute Video</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row border-top">
+
+                <h5 class="col-12  txtprimColor font-weight-bold">U.S.</h5>
+
+                <div class="col-12 col-md-4">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/topic.png" alt="donald">
+                        <figcaption class="py-2 font-weight-bold">
+                            <a href="#">Mehdi Hasan Summarizes 'Awfulness' of Trump Presidency in Two-minute
+                                Video</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <figure>
+                        <img class="col-12 px-0" src="imgs/topic.png" alt="donald">
+                        <figcaption class="py-2 font-weight-bold">
+                            <a href="#">Mehdi Hasan Summarizes 'Awfulness' of Trump Presidency in Two-minute
+                                Video</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col col-md-4">
+
+                    <div class="col-12 border-bottom mb-3">
+                        <figure class="d-flex">
+                            <img class="topic-img px-3 h-100 w-100" src="imgs/topic.png" alt="donald">
+                            <figcaption>
+                                <a class="col-6 py-2 font-weight-bold px-0" href="#">Mehdi Hasan Summarizes 'Awfulness'
+                                    of
+                                    Trump Presidency in Two-minute Video</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 border-bottom mb-3">
+                        <figure class="d-flex">
+                            <img class="topic-img px-3 h-100 w-100" src="imgs/topic.png" alt="donald">
+                            <figcaption>
+                                <a class="col-6 py-2 font-weight-bold px-0" href="#">Mehdi Hasan Summarizes 'Awfulness'
+                                    of
+                                    Trump Presidency in Two-minute Video</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 border-bottom">
+                        <figure class="d-flex">
+                            <img class="topic-img px-3 h-100 w-100" src="imgs/topic.png" alt="donald">
+                            <figcaption>
+                                <a class="col-6 py-2 font-weight-bold px-0" href="#">Mehdi Hasan Summarizes 'Awfulness'
+                                    of
+                                    Trump Presidency in Two-minute Video</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="container footer">
+
+        <div class="row d-flex flex-column flex-md-row justify-content-md-between border-bottom mx-2 mb-3 py-2">
+            <div class="flex-footer-item d-flex flex-column flex-md-row">
+                <div class="footer-logo">
+                    <svg viewBox="0 0 395.6 60" style="fill:#f72210;">
+                        <path class="st0"
+                            d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                        </path>
+                    </svg>
+                </div>
+                <p class="small m-0 py-2">© 2020 NEWSWEEK DIGITAL LLC</p>
+            </div>
+            <div class="social-links py-0">
+                <ul class="list-unstyled m-0">
+                    <li class="list-inline-item"><i class="fab fa-facebook-square"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-instagram"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-tumblr"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="list-unstyled langs mx-2">
+            <li class="list-inline-item text-muted"><strong>Editions:</strong></li>
+            <li class="list-inline-item"><a href="#">U.S. Edition</a></li>
+            <li class="list-inline-item"><a href="#">日本</a></li>
+            <li class="list-inline-item"><a href="#">Pakistan</a></li>
+            <li class="list-inline-item"><a href="#">Polska</a></li>
+            <li class="list-inline-item"><a href="#">România</a></li>
+            <li class="list-inline-item"><a href="#">About Us</a></li>
+            <li class="list-inline-item"><a href="#">Corrections</a></li>
+            <li class="list-inline-item"><a href="#">Contact Us</a></li>
+            <li class="list-inline-item"><a href="#">Editorial Guidelines</a></li>
+            <li class="list-inline-item"><a href="#">Advertise</a></li>
+            <li class="list-inline-item"><a href="#">Copyright</a></li>
+            <li class="list-inline-item"><a href="#">Terms & Conditions</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            <li class="list-inline-item"><a href="#">Cookie Policy</a></li>
+            <li class="list-inline-item"><a href="#">Terms of Sale</a></li>
+            <li class="list-inline-item"><a href="#">Archive</a></li>
+            <li class="list-inline-item"><a href="#">Announcements</a></li>
+        </ul>
+
+    </footer>
+
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
