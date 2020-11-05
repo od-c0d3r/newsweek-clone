@@ -30,7 +30,7 @@ You can find the original project specification at: https://www.theodinproject.c
 👤 **Omar Rashad**
 
 - GitHub: [@od-c0d3r](https://github.com/od-c0d3r)
--LinkedIn: [@omarrashad](https://www.linkedin.com/in/omarrashad)
+- LinkedIn: [@omarrashad](https://www.linkedin.com/in/omarrashad)
 
 ## 🤝 Contributing
 
