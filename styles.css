@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .txtprimColor {
@@ -16,6 +16,21 @@
 .navbar .navbar-brand {
   fill: white;
   width: 150px;
+}
+
+.debate img,
+.opinin img {
+  width: 90px;
+}
+
+.more-stories img {
+  width: 300px;
+}
+
+.logo img {
+  background-color: #f72210;
+  width: 25px;
+  height: 25px;
 }
 
 .navbar .login img {
@@ -49,11 +64,6 @@
   top: -25px;
 }
 
-.debate img,
-.opinin img {
-  width: 90px;
-}
-
 .debate a,
 .opinin a {
   color: #000;
@@ -77,19 +87,9 @@
   left: 50%;
 }
 
-.more-stories img {
-  width: 300px;
-}
-
 .more-stories a {
   color: black;
   font-size: 18px;
-}
-
-.logo img {
-  background-color: #f72210;
-  width: 25px;
-  height: 25px;
 }
 
 .col-12 a {
@@ -99,7 +99,7 @@
 .col-12 a:hover {
   color: #000;
   -webkit-text-decoration-color: #f72210;
-          text-decoration-color: #f72210;
+  text-decoration-color: #f72210;
 }
 
 .topic-img {
@@ -116,7 +116,7 @@
 }
 
 .footer li:hover {
-  color: #1DA1F2;
+  color: #1da1f2;
 }
 
 .footer .langs li a {
@@ -127,4 +127,3 @@
   color: black;
   text-decoration: none;
 }
-/*# sourceMappingURL=styles.css.map */
