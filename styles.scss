@@ -6,8 +6,12 @@ $primColor : #f72210;
     box-sizing: border-box;
   }
 
-.primColor {
+.txtprimColor {
     color: $primColor;
+}
+
+.top-md-bar {
+    background-color: $primColor;
 }
 
 .navbar {
@@ -47,6 +51,16 @@ $primColor : #f72210;
         
     }
 }
+
+//  #cir {
+//             background-color:black!important;
+//             color : white;
+//             width:50px;
+//             height:50px;
+//             border-radius:50%;
+//             position: absolute;
+//         }
+
 
 .debate,
 .opinin {
