@@ -1,5 +1,11 @@
 $primColor : #f72210;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 .primColor {
     color: $primColor;
 }
@@ -47,6 +53,15 @@ $primColor : #f72210;
 
     img {
         width: 90px;
+    }
+
+    a {
+        color: #000;
+        font-weight: bold;
+    }
+
+    span {
+        color: #666;
     }
 }
 
