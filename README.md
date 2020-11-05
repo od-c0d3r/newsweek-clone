@@ -18,7 +18,7 @@ You can find the original project specification at: https://www.theodinproject.c
 
 ## Live Demo 
 
-[Live Demo Link]https://od-c0d3r.github.io/newsweek-clone/)
+[Live Demo Link](https://od-c0d3r.github.io/newsweek-clone/)
 
 ## Authors
 
