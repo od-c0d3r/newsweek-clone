@@ -10,10 +10,6 @@ $primColor : #f72210;
     color: $primColor;
 }
 
-.top-md-bar {
-    background-color: $primColor;
-}
-
 .navbar {
     background-color: $primColor;
 
@@ -31,18 +27,19 @@ $primColor : #f72210;
     }
 }
 
+.lg-nav {
+    .top {
+        background-color: $primColor;
+    }
+}
+
 .top-story,
 .featured-stories,
 .editor-pick {
     
-    .tags {
-        position: absolute;
-        bottom:171px;
-        width: 60px;
-        height: 35px;
-        background-color: #e7e7e7;
-        font-weight: 700;
-        color: red;
+    .corner-txt {
+        position: relative;
+        top: -25px;
     }
 
     a {
@@ -52,15 +49,12 @@ $primColor : #f72210;
     }
 }
 
-//  #cir {
-//             background-color:black!important;
-//             color : white;
-//             width:50px;
-//             height:50px;
-//             border-radius:50%;
-//             position: absolute;
-//         }
-
+.top-story {
+    .corner-txt {
+        position: relative;
+        top: -25px;
+    }
+}
 
 .debate,
 .opinin {
@@ -76,6 +70,17 @@ $primColor : #f72210;
 
     span {
         color: #666;
+    }
+
+    .circle {
+        background-color:black;
+        color : white;
+        width:50px;
+        height:50px;
+        border-radius:50%;
+        position: relative;
+        top: -41px;
+        left: 50%;
     }
 }
 

@@ -5,7 +5,7 @@
           box-sizing: border-box;
 }
 
-.primColor {
+.txtprimColor {
   color: #f72210;
 }
 
@@ -26,16 +26,15 @@
   width: 40px;
 }
 
-.top-story .tags,
-.featured-stories .tags,
-.editor-pick .tags {
-  position: absolute;
-  bottom: 171px;
-  width: 60px;
-  height: 35px;
-  background-color: #e7e7e7;
-  font-weight: 700;
-  color: red;
+.lg-nav .top {
+  background-color: #f72210;
+}
+
+.top-story .corner-txt,
+.featured-stories .corner-txt,
+.editor-pick .corner-txt {
+  position: relative;
+  top: -25px;
 }
 
 .top-story a,
@@ -43,6 +42,11 @@
 .editor-pick a {
   color: black;
   font: 22px "Roboto Condensed", sans-serif;
+}
+
+.top-story .corner-txt {
+  position: relative;
+  top: -25px;
 }
 
 .debate img,
@@ -59,6 +63,18 @@
 .debate span,
 .opinin span {
   color: #666;
+}
+
+.debate .circle,
+.opinin .circle {
+  background-color: black;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: -41px;
+  left: 50%;
 }
 
 .more-stories img {
