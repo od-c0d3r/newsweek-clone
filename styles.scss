@@ -1,0 +1,140 @@
+$primColor : #f72210;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.txtprimColor {
+    color: $primColor;
+}
+
+.navbar {
+    background-color: $primColor;
+
+    .navbar-brand {
+        fill: white;
+        width: 150px;
+    }
+
+    .login img{
+        width: 30px;
+    }
+
+    .login {
+        width: 40px;
+    }
+}
+
+.lg-nav {
+    .top {
+        background-color: $primColor;
+    }
+}
+
+.top-story,
+.featured-stories,
+.editor-pick {
+    
+    .corner-txt {
+        position: relative;
+        top: -25px;
+    }
+
+    a {
+        color: black;
+        font: 22px "Roboto Condensed", sans-serif;
+        
+    }
+}
+
+.top-story {
+    .corner-txt {
+        position: relative;
+        top: -25px;
+    }
+}
+
+.debate,
+.opinin {
+
+    img {
+        width: 90px;
+    }
+
+    a {
+        color: #000;
+        font-weight: bold;
+    }
+
+    span {
+        color: #666;
+    }
+
+    .circle {
+        background-color:black;
+        color : white;
+        width:50px;
+        height:50px;
+        border-radius:50%;
+        position: relative;
+        top: -41px;
+        left: 50%;
+    }
+}
+
+.more-stories {
+
+    img {
+        width: 300px;
+    }
+
+    a {
+        color: black;
+        font-size: 18px;
+    }
+}
+
+.logo img {
+    background-color: $primColor;
+    width: 25px;
+    height: 25px;
+}
+
+.col-12 {
+    a {
+        color: black;
+    }
+    a:hover {
+        color: #000;
+        text-decoration-color: $primColor;
+    }
+}
+
+.topic-img {
+    max-width: 60%;
+}
+
+.footer-logo {
+    width: 200px;
+}
+
+.footer {
+    .social-links li{
+        font-size: 1.5rem;
+        color: #666;
+    }
+
+    li:hover {
+        color: #1DA1F2;
+    }
+
+    .langs li a{
+        color: #666;
+    }
+    .langs li a:hover{
+        color: black;
+        text-decoration: none;
+    }
+}
